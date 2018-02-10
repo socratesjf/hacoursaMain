@@ -1,0 +1,35 @@
+
+.jumbotron{
+    background-image: url("https://dummyimage.com/1400x500/000/fff/");
+    background-size: 1000px;
+    height: 500px;
+    box-shadow: 5px 2px #888888;
+}
+
+.pageHeaderh1 {
+    color: white;
+    position: absolute;
+    right: 12%;
+    font-family: 'Assistant', sans-serif;
+    font-size: 60px;
+}
+.pageHeaderp {
+    color: white;
+    position: absolute;
+    top: 27%;
+    right: 12%;
+    font-family: 'Assistant', sans-serif;
+    font-size: 20px;
+}
+
+.mat-divider {
+    width: 25%;
+    right: 50%;
+}
+
+.page-header {
+    position: relative;
+    padding-top: 3px;
+    text-align: center;
+}
+
