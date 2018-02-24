@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MatDividerModule} from '@angular/material/divider'
 import { MatCardModule} from '@angular/material/card';
+import {MatExpansionModule} from '@angular/material/expansion';
 import { NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { AngularFireModule} from 'angularfire2';
 import { AngularFireDatabaseModule, AngularFireDatabase} from 'angularfire2/database';
@@ -63,6 +64,7 @@ import { LoginComponent } from './login/login.component';
     BrowserAnimationsModule,
     MatDividerModule,
     MatCardModule,
+    MatExpansionModule,
     NgbModule.forRoot(),
     RouterModule.forRoot([
       {path: '', component: HomepageComponent},

@@ -1,4 +1,100 @@
 h1 {
     position: relative;
     padding-top: 50px;
+    text-align: center;
+}
+
+h2 {
+    position: relative;
+    text-align: center;
+    font-family: 'Assistant', sans-serif;
+}
+
+p {
+    position: relative;
+    text-align: justify;
+    width:70%;
+    right: 15%;
+}
+
+.jumbotron{
+    background-size: 1000px;
+    height: 500px;
+    box-shadow: 5px 2px #888888;
+}
+
+.pageHeaderh1 {
+    color: black;
+    position: absolute;
+    right: 12%;
+    font-family: 'Assistant', sans-serif;
+    font-size: 60px;
+}
+.pageHeaderp {
+    color: black;
+    position: absolute;
+    top: 27%;
+    right: 12%;
+    font-family: 'Assistant', sans-serif;
+    font-size: 20px;
+}
+
+.spec-card {
+    width: 50%;
+    position: relative;
+    right: 25%;
+    font-family: 'Assistant', sans-serif;
+    margin-bottom: 50px;
+}
+.hebrew-text {
+    text-align: right;
+}
+.center-aligned {
+    text-align: center;
+}
+
+.card-title {
+    font-size: 48px;
+}
+
+ul {
+    columns: 2;
+    list-style-position: inside;
+}
+
+li {
+    font-size: 18px;
+}
+
+.course-curriculum {
+    position: relative;
+    width: 70%;
+    right:15%;
+    font-family: 'Assistant', sans-serif;
+}
+
+.curriculum-container {
+    position: relative;
+    padding-top: 100px;
+}
+
+.divider {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    width: 90%;
+    right: 5%;
+}
+
+.about-teacher-image {
+    border-radius: 100%;
+    width: 80px;
+}
+
+.teacher-about-card {
+    width: 40%;
+    position: relative;
+    right: 30%;
+    font-family: 'Assistant', sans-serif;
+    margin-bottom: 50px;
 }
