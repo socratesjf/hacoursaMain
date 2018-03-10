@@ -31,6 +31,10 @@ import { CourseForumComponent } from './courses/course-forum/course-forum.compon
 import { CourseWatchComponent } from './courses/course-watch/course-watch.component';
 import { CourseResourcesComponent } from './courses/course-resources/course-resources.component';
 import { LoginComponent } from './login/login.component';
+import { CourseViewBannerComponent } from './course-view-banner/course-view-banner.component';
+import { CourseViewSpecCardComponent } from './course-view-spec-card/course-view-spec-card.component';
+import { CourseCurriculumComponent } from './course-curriculum/course-curriculum.component';
+import { TeacherCardComponent } from './teacher-card/teacher-card.component';
 
 
 
@@ -54,7 +58,11 @@ import { LoginComponent } from './login/login.component';
     CourseForumComponent,
     CourseWatchComponent,
     CourseResourcesComponent,
-    LoginComponent
+    LoginComponent,
+    CourseViewBannerComponent,
+    CourseViewSpecCardComponent,
+    CourseCurriculumComponent,
+    TeacherCardComponent
   ],
   imports: [
     BrowserModule,

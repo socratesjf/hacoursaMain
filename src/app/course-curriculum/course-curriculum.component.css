@@ -1,0 +1,11 @@
+.course-curriculum {
+  position: relative;
+  width: 70%;
+  right: 15%;
+  font-family: "Assistant", sans-serif;
+}
+
+.curriculum-container {
+  position: relative;
+  padding-top: 100px;
+}

@@ -1,0 +1,26 @@
+.spec-card {
+    width: 50%;
+    position: relative;
+    right: 25%;
+    font-family: 'Assistant', sans-serif;
+    margin-bottom: 50px;
+}
+.hebrew-text {
+    text-align: right;
+}
+.center-aligned {
+    text-align: center;
+}
+
+.card-title {
+    font-size: 48px;
+}
+
+ul {
+    columns: 2;
+    list-style-position: inside;
+}
+
+li {
+    font-size: 18px;
+}

@@ -1,0 +1,16 @@
+.about-teacher-image {
+    border-radius: 100%;
+    width: 80px;
+}
+
+.teacher-about-card {
+    width: 40%;
+    position: relative;
+    right: 30%;
+    font-family: 'Assistant', sans-serif;
+    margin-bottom: 50px;
+}
+
+.hebrew-text {
+    text-align: right;
+}

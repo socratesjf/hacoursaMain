@@ -17,45 +17,9 @@ p {
     right: 15%;
 }
 
-.jumbotron{
-    background-size: 1000px;
-    height: 500px;
-    box-shadow: 5px 2px #888888;
-}
 
-.pageHeaderh1 {
-    color: black;
-    position: absolute;
-    right: 12%;
-    font-family: 'Assistant', sans-serif;
-    font-size: 60px;
-}
-.pageHeaderp {
-    color: black;
-    position: absolute;
-    top: 27%;
-    right: 12%;
-    font-family: 'Assistant', sans-serif;
-    font-size: 20px;
-}
 
-.spec-card {
-    width: 50%;
-    position: relative;
-    right: 25%;
-    font-family: 'Assistant', sans-serif;
-    margin-bottom: 50px;
-}
-.hebrew-text {
-    text-align: right;
-}
-.center-aligned {
-    text-align: center;
-}
 
-.card-title {
-    font-size: 48px;
-}
 
 ul {
     columns: 2;
