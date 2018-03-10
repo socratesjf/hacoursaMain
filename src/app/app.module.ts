@@ -1,6 +1,9 @@
+import { CoursePageService } from './services/course-page/course-page.service';
+import { DataService } from './services/data/data.service';
 import { environment } from './../environments/environment';
+import {HttpModule} from '@angular/http';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MatDividerModule} from '@angular/material/divider'
 import { MatCardModule} from '@angular/material/card';
@@ -35,6 +38,7 @@ import { CourseViewBannerComponent } from './course-view-banner/course-view-bann
 import { CourseViewSpecCardComponent } from './course-view-spec-card/course-view-spec-card.component';
 import { CourseCurriculumComponent } from './course-curriculum/course-curriculum.component';
 import { TeacherCardComponent } from './teacher-card/teacher-card.component';
+import { AppErrorHandler } from './common/app-error-handler';
 
 
 
@@ -66,6 +70,7 @@ import { TeacherCardComponent } from './teacher-card/teacher-card.component';
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
     AngularFireAuthModule,
@@ -76,7 +81,7 @@ import { TeacherCardComponent } from './teacher-card/teacher-card.component';
     NgbModule.forRoot(),
     RouterModule.forRoot([
       {path: '', component: HomepageComponent},
-      {path: 'course-view', component: CourseViewComponent},
+      {path: 'course-view/:id', component: CourseViewComponent},
       {path: 'shopping-cart', component: ShoppingCartComponent},
       {path: 'login', component: LoginComponent},
       {path: 'checkout', component: CheckoutComponent},
@@ -93,7 +98,11 @@ import { TeacherCardComponent } from './teacher-card/teacher-card.component';
       {path: 'course-learning-space/resources', component: CourseResourcesComponent},
     ])
   ],
-  providers: [],
+  providers: [
+    {provide: ErrorHandler, useClass: AppErrorHandler},
+    DataService,
+    CoursePageService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
