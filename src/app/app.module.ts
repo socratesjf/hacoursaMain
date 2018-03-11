@@ -39,6 +39,7 @@ import { CourseViewSpecCardComponent } from './course-view-spec-card/course-view
 import { CourseCurriculumComponent } from './course-curriculum/course-curriculum.component';
 import { TeacherCardComponent } from './teacher-card/teacher-card.component';
 import { AppErrorHandler } from './common/app-error-handler';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -70,6 +71,7 @@ import { AppErrorHandler } from './common/app-error-handler';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     HttpModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,

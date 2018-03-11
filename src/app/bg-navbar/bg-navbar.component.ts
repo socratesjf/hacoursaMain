@@ -1,3 +1,4 @@
+import { AngularFireAuth } from 'angularfire2/auth';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BgNavbarComponent  {
 
-  constructor() { }
+  constructor(private afAuth: AngularFireAuth) { }
 
-
+  logout() {
+    this.afAuth.auth.signOut();
+  }
 }
