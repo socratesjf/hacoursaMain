@@ -7,6 +7,7 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MatDividerModule} from '@angular/material/divider'
 import { MatCardModule} from '@angular/material/card';
+import {MatTabsModule} from '@angular/material/tabs';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { AngularFireModule} from 'angularfire2';
@@ -80,6 +81,7 @@ import { FormsModule } from '@angular/forms';
     MatDividerModule,
     MatCardModule,
     MatExpansionModule,
+    MatTabsModule,
     NgbModule.forRoot(),
     RouterModule.forRoot([
       {path: '', component: HomepageComponent},
@@ -94,7 +96,12 @@ import { FormsModule } from '@angular/forms';
       {path: 'admin/admin-dashboard', component: AdminDashboardComponent},
       {path: 'admin/teacher-dashboard', component: TeacherDashboardComponent},
       {path: 'admin/teacher-dashboard', component: TeacherDashboardComponent},
-      {path: 'course-learning-space', component: CourseLearningSpaceComponent},
+      {path: 'course-learning-space', component: CourseLearningSpaceComponent, 
+        children:[
+          {path: 'watch', component: CourseWatchComponent},
+          {path: 'forum', component: CourseForumComponent},
+          {path: 'resources', component: CourseResourcesComponent},
+                 ]},
       {path: 'course-learning-space/forum', component: CourseForumComponent},
       {path: 'course-learning-space/watch', component: CourseWatchComponent},
       {path: 'course-learning-space/resources', component: CourseResourcesComponent},

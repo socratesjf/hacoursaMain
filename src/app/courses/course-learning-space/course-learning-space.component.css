@@ -1,0 +1,20 @@
+.container {
+    padding-top: 40px;
+}
+
+.sidebar {
+    position: fixed;
+    background-color: grey;
+    right: 0px;
+    height: 100%;
+    text-align: right;
+}
+
+li {
+    font-size: 16px;
+}
+
+.nav-title {
+    font-size:24px;
+    font-style: bold;
+}

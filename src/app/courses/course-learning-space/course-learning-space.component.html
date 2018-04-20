@@ -1,3 +1,22 @@
-<p>
-  course-learning-space works!
-</p>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-2 sidebar">
+      <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+        <span class="nav-title">מרחב הלמידה</span>
+        <ul class="list-unstyled">
+          <li class="nav-item">
+            <a class="nav-link">צפה בקורס</a>
+          </li>
+          <li>
+            <a class="nav-link">חומרים</a>
+          </li>
+          <li>
+            <a class="nav-link">פורום</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="col-sm">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
