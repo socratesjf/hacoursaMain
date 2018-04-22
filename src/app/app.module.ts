@@ -9,6 +9,7 @@ import { MatDividerModule} from '@angular/material/divider'
 import { MatCardModule} from '@angular/material/card';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatExpansionModule} from '@angular/material/expansion';
+import {MatListModule} from '@angular/material/list';
 import { NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { AngularFireModule} from 'angularfire2';
 import { AngularFireDatabaseModule, AngularFireDatabase} from 'angularfire2/database';
@@ -82,6 +83,7 @@ import { FormsModule } from '@angular/forms';
     MatCardModule,
     MatExpansionModule,
     MatTabsModule,
+    MatListModule,
     NgbModule.forRoot(),
     RouterModule.forRoot([
       {path: '', component: HomepageComponent},
@@ -110,7 +112,7 @@ import { FormsModule } from '@angular/forms';
   providers: [
     {provide: ErrorHandler, useClass: AppErrorHandler},
     DataService,
-    CoursePageService
+    CoursePageService,
   ],
   bootstrap: [AppComponent]
 })

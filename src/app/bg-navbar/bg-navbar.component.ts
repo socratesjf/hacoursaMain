@@ -1,3 +1,4 @@
+import { ActivatedRoute } from '@angular/router';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { Component, OnInit } from '@angular/core';
 
@@ -6,11 +7,19 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './bg-navbar.component.html',
   styleUrls: ['./bg-navbar.component.css']
 })
-export class BgNavbarComponent  {
+export class BgNavbarComponent implements OnInit  {
 
-  constructor(private afAuth: AngularFireAuth) { }
+  constructor(
+    private afAuth: AngularFireAuth,
+    private route: ActivatedRoute,
+  ) { }
+
+  ngOnInit() {
+  }
 
   logout() {
     this.afAuth.auth.signOut();
   }
+
+  
 }

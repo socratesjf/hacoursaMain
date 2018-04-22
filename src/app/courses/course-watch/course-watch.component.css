@@ -1,0 +1,25 @@
+.video-card {
+    position: relative;
+    width: 100%;
+    font-family: 'Assistant', sans-serif;
+}
+
+.row {
+    position: relative;
+    top:10%;
+    right:10%;
+    margin: 10% -10% 0% -10%;
+}
+
+.col {
+    position: relative;
+}
+
+img {
+    position: relative;
+    right:-12%;
+}
+
+.hebrew-text {
+    font-family: "Assistant", sans-serif;
+}

@@ -1,0 +1,16 @@
+.card {
+    font-family: 'Assistant', sans-serif;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.resource-grid {
+    position: relative;
+    width: 70%;
+    right: 15%
+}
+
+h1{
+    position: relative;
+    text-align: center;
+}

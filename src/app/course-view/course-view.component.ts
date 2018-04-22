@@ -16,7 +16,8 @@ export class CourseViewComponent implements OnInit{
   constructor(
     private courseService: CoursePageService, 
     private router: Router,
-    private route: ActivatedRoute) {};
+    private route: ActivatedRoute)
+    {};
 
   ngOnInit() {
     let id =  this.route.snapshot.paramMap.get('id');

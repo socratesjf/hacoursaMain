@@ -11,5 +11,5 @@ export class CourseLearningSpaceComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  
 }
