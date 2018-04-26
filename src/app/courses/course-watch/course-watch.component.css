@@ -5,19 +5,20 @@
 }
 
 .row {
-    position: relative;
-    top:10%;
-    right:10%;
-    margin: 10% -10% 0% -10%;
+    position: absolute;
+    margin: 10% 10% 0% 0%; 
+    width: 100%;
 }
 
 .col {
     position: relative;
+    align-content: center;
+    width: 100%;
 }
 
 img {
     position: relative;
-    right:-12%;
+    right:-6%;
 }
 
 .hebrew-text {

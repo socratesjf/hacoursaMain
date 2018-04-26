@@ -1,0 +1,40 @@
+mat-card {
+    font-family: 'Assistant', sans-serif;
+}
+
+.ask-question-card {
+    position: relative;
+    margin: 75px;
+    right: 20%;
+    width: 60%;
+    font-family: 'Assistant', sans-serif;
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+.question-asker {
+    position: relative;
+    width: 20%;
+    margin-right: 25%;
+}
+
+.forum-question-profile-image {
+    border-radius: 100%;
+    width: 50px;
+    position: relative;
+    left: -5%; 
+
+}
+
+.question-card {
+    position: relative;
+    right: 27%;
+    width: 60%;
+    font-family: 'Assistant', sans-serif;
+}
+
+.content-first-sentance {
+    text-align: right;
+}
