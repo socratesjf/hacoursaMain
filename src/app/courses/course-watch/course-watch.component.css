@@ -1,4 +1,4 @@
-.video-card {
+ .video-card {
     position: relative;
     width: 100%;
     font-family: 'Assistant', sans-serif;
@@ -23,4 +23,37 @@ img {
 
 .hebrew-text {
     font-family: "Assistant", sans-serif;
+} 
+
+/* .hero-thumbnail {
+    width: 200px;
+    border-radius: 0%;
 }
+
+.hero-text {
+    text-align: center;
+}
+
+.mat-card {
+    width: 150%;
+    right: 30%;
+    font-family: 'Assistant', sans-serif;
+}
+
+mat-card-content {
+font-size: 16px;
+}
+
+mat-card-title {
+    font-size: 40px;
+    font-weight: 500;    
+}
+
+.board {
+    position: relative;
+}
+
+.overview-hero {
+    position: relative;
+
+} */

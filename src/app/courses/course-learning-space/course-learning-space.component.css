@@ -1,15 +1,17 @@
 
-
-.container {
-    padding-top: 40px;
-}
-
+/* 
+.container-fluid {
+    padding: 120px 0px 0px 0px;
+} */
+/* 
 .sidebar {
     position: fixed;
     background-color: grey;
     right: 0px;
+    top: 60px;
     height: 100%;
     text-align: right;
+    width:33.33%;
 }
 
 li {
@@ -18,8 +20,10 @@ li {
 }
 
 .nav-title {
+    position: relative;
     font-size:24px;
-    font-style: bold;
+    font-weight: 600;
+    text-align: center;
 }
 
 .row {
@@ -30,3 +34,35 @@ li {
     position: relative;
     width: 100%;
 }
+
+.board-area {
+    position: relative;
+    width: 66.67%;
+} */
+
+.dash-box {
+    padding: 37px 0px 0px 0px;
+}
+
+ul {
+    text-align: right;
+}
+
+h6 {
+    text-align: right;
+}
+
+.sidebar-sticky {
+    position: sticky;
+    top: 100px; /* Height of navbar */
+    height: calc(100vh - 100px);
+    padding-top: .5rem;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  }
+
+  .sticky-top {
+      position: sticky;
+      top: 56px;
+      z-index: 1020;
+    }

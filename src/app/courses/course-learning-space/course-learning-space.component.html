@@ -1,6 +1,6 @@
-<div class="container">
-  <div class="row main-row">
-    <div class="col-sm-2 sidebar">
+<!-- <div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-2">
       <nav class="col-md-2 d-none d-md-block bg-light sidebar">
         <span class="nav-title">מרחב הלמידה</span>
         <ul class="list-unstyled">
@@ -16,7 +16,99 @@
         </ul>
       </nav>
     </div>
-    <div class="col-sm">
-      <router-outlet></router-outlet>
+    <div class="co-lg-10">
+      <router-outlet class="text-center"></router-outlet>
+    </div>
+  </div> -->
+
+<div class="dash-box">
+  <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 dash-nav">
+    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">הכורסא</a>
+    <ul class="navbar-nav px-3">
+      <li class="nav-item text-nowrap">
+      </li>
+    </ul>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+        <div class="sidebar-sticky">
+            <h4 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                <span>אזורי הקורס</span>
+              </h4>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" routerLink="/course-learning-space/watch">
+                <span data-feather="home"></span>
+                צפייה בקורס
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/course-learning-space/resources">
+                <span data-feather="file"></span>
+                חומרים להורדה
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/course-learning-space/forum">
+                <span data-feather="shopping-cart"></span>
+                פורום
+              </a>
+            </li>
+          </ul>
+
+          <h4 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+            <span>הפרופיל שלי</span>
+          </h4>
+          <ul class="nav flex-column mb-2">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="file-text"></span>
+                הקורסים שלי
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="file-text"></span>
+                הגדרות החשבון
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="file-text"></span>
+                צור קשר
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+          <h1 class="h2">מרחב הלמידה</h1>
+          <div class="btn-toolbar mb-2 mb-md-0">
+            <div class="btn-group mr-2">
+              <button class="btn btn-sm btn-outline-secondary">כפתור</button>
+              <button class="btn btn-sm btn-outline-secondary">כפתור</button>
+            </div>
+            <button class="btn btn-sm btn-outline-secondary dropdown-toggle">
+              <span data-feather="calendar"></span>
+              תפריט קטן
+            </button>
+          </div>
+        </div>
+
+        <h2 class="text-center">אזור ראשון של הדשבורד</h2>
+        <div>
+          <router-outlet></router-outlet>
+        </div>
+        <canvas class="my-4" id="myChart" width="900" height="380"></canvas>
+
+        <h2 class="text-center">אזור נוסף של הדשבורד</h2>
+      </main>
     </div>
   </div>
+</div>
+

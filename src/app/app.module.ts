@@ -42,6 +42,7 @@ import { CourseCurriculumComponent } from './course-curriculum/course-curriculum
 import { TeacherCardComponent } from './teacher-card/teacher-card.component';
 import { AppErrorHandler } from './common/app-error-handler';
 import { FormsModule } from '@angular/forms';
+import { ForumQuestionComponent } from './courses/course-forum/forum-question/forum-question.component';
 
 
 
@@ -69,7 +70,8 @@ import { FormsModule } from '@angular/forms';
     CourseViewBannerComponent,
     CourseViewSpecCardComponent,
     CourseCurriculumComponent,
-    TeacherCardComponent
+    TeacherCardComponent,
+    ForumQuestionComponent
   ],
   imports: [
     BrowserModule,
