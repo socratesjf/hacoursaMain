@@ -1,3 +1,5 @@
+import { UserService } from './user.service';
+import { AuthService } from './auth.service';
 import { CoursePageService } from './services/course-page/course-page.service';
 import { DataService } from './services/data/data.service';
 import { environment } from './../environments/environment';
@@ -15,7 +17,6 @@ import { AngularFireModule} from 'angularfire2';
 import { AngularFireDatabaseModule, AngularFireDatabase} from 'angularfire2/database';
 import { AngularFireAuthModule} from 'angularfire2/auth';
 import { RouterModule} from '@angular/router'
-
 
 import { AppComponent } from './app.component';
 import { HomepageComponent } from './homepage/homepage.component';
@@ -71,7 +72,7 @@ import { ForumQuestionComponent } from './courses/course-forum/forum-question/fo
     CourseViewSpecCardComponent,
     CourseCurriculumComponent,
     TeacherCardComponent,
-    ForumQuestionComponent
+    ForumQuestionComponent,
   ],
   imports: [
     BrowserModule,
@@ -115,6 +116,8 @@ import { ForumQuestionComponent } from './courses/course-forum/forum-question/fo
     {provide: ErrorHandler, useClass: AppErrorHandler},
     DataService,
     CoursePageService,
+    AuthService,
+    UserService
   ],
   bootstrap: [AppComponent]
 })

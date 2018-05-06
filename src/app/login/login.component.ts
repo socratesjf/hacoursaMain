@@ -1,3 +1,6 @@
+import { UserService } from './../user.service';
+import { AuthService } from './../auth.service';
+import { AngularFireDatabase } from 'angularfire2/database';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { Component, OnInit } from '@angular/core';
 import * as firebase from 'firebase';
@@ -9,21 +12,23 @@ import * as firebase from 'firebase';
 })
 export class LoginComponent  {
 
-  constructor(private afAuth: AngularFireAuth) { }
+  constructor(private auth: AuthService, 
+              private userService: UserService) {}
 
-
-
-  loginWithGoogle() {
-  this.afAuth.auth.signInWithRedirect(new firebase.auth.GoogleAuthProvider());
+loginWithGoogle() {
+  this.auth.registerWithGoogle();
 }
 
-submit(f) {
-  this.afAuth.auth.createUserWithEmailAndPassword(f.value.email,f.value.password).catch(function(error){
-  })
+async submit(f) {
+  await this.auth.registerWithEmail(f.value.email, f.value.password);
+  let user;
+  let observable = this.auth.user$;
+  await observable.subscribe(x => {user = x});
+  console.log(user);
+  this.userService.save(user);
 }
 
+
 }
-
-
 
 

@@ -38,6 +38,10 @@ img {
     
   }
 
+  .wistia_responsive_padding {
+    direction: ltr;
+  }
+
 
 /* .hero-thumbnail {
     width: 200px;
