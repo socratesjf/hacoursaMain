@@ -12,7 +12,7 @@ export class AuthService {
    }
 
    registerWithGoogle() {
-    this.afAuth.auth.signInWithRedirect(new firebase.auth.GoogleAuthProvider());
+    this.afAuth.auth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
    }
 
    registerWithEmail(email, password) {

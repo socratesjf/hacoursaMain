@@ -7,10 +7,21 @@ export class UserService {
 
   constructor(private db: AngularFireDatabase) { }
 
-  save(user: firebase.User) {
-    this.db.object('/users/' + user.uid).update({
-      email: user.email
-    });
-  }
+  saveForEmailPassword(user: firebase.User, firstName: string, lastName:string) {
+      this.db.object('/users/' + user.uid).update({
+        email: user.email,
+        firstName: firstName,
+        lastName: lastName
+      });
+    }
 
-}
+  saveForGoogle(user: firebase.User) {
+      this.db.object('/users/' + user.uid).update({
+        email: user.email,
+        firstName: user.displayName.split(" ")[0],
+        lastName: user.displayName.split(" ")[1],
+      });
+    }
+  }
+  
+
