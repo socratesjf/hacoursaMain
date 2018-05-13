@@ -22,6 +22,10 @@ export class UserService {
         lastName: user.displayName.split(" ")[1],
       });
     }
+
+  async getCurrentUser(uid) {
+    return this.db.object('/users/' + uid);
+  }
   }
   
 

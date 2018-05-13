@@ -1,0 +1,31 @@
+h1 {
+    position: relative;
+    padding-top: 75px;
+    text-align: center;
+    font-family: 'Assistant', sans-serif;
+}
+
+.login-card {
+    margin-top: 50px;
+    width: 50%;
+    position: relative;
+    right: 25%;
+    font-family: 'Assistant', sans-serif;
+    margin-bottom: 50px;
+    direction: rtl;
+    text-align: right;
+}
+
+.form-group {
+    position: relative;
+    width: 60%;
+    right: 20%;
+}
+
+.btn-primary {
+    margin: 10px;
+    text-align: center;
+    position: relative;
+    width: 20%;
+    right:40%;
+}

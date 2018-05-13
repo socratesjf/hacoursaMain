@@ -1,5 +1,5 @@
-import { UserService } from './user.service';
-import { AuthService } from './auth.service';
+import { UserService } from './services/user/user.service';
+import { AuthService } from './services/auth/auth.service';
 import { CoursePageService } from './services/course-page/course-page.service';
 import { DataService } from './services/data/data.service';
 import { environment } from './../environments/environment';
@@ -36,7 +36,7 @@ import { CourseLearningSpaceComponent } from './courses/course-learning-space/co
 import { CourseForumComponent } from './courses/course-forum/course-forum.component';
 import { CourseWatchComponent } from './courses/course-watch/course-watch.component';
 import { CourseResourcesComponent } from './courses/course-resources/course-resources.component';
-import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 import { CourseViewBannerComponent } from './course-view-banner/course-view-banner.component';
 import { CourseViewSpecCardComponent } from './course-view-spec-card/course-view-spec-card.component';
 import { CourseCurriculumComponent } from './course-curriculum/course-curriculum.component';
@@ -44,6 +44,7 @@ import { TeacherCardComponent } from './teacher-card/teacher-card.component';
 import { AppErrorHandler } from './common/app-error-handler';
 import { FormsModule } from '@angular/forms';
 import { ForumQuestionComponent } from './courses/course-forum/forum-question/forum-question.component';
+import { LoginComponent } from './login/login.component';
 
 
 
@@ -67,12 +68,13 @@ import { ForumQuestionComponent } from './courses/course-forum/forum-question/fo
     CourseForumComponent,
     CourseWatchComponent,
     CourseResourcesComponent,
-    LoginComponent,
+    SignupComponent,
     CourseViewBannerComponent,
     CourseViewSpecCardComponent,
     CourseCurriculumComponent,
     TeacherCardComponent,
     ForumQuestionComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
@@ -92,6 +94,7 @@ import { ForumQuestionComponent } from './courses/course-forum/forum-question/fo
       {path: '', component: HomepageComponent},
       {path: 'course-view/:id', component: CourseViewComponent},
       {path: 'shopping-cart', component: ShoppingCartComponent},
+      {path: 'signin', component: SignupComponent},
       {path: 'login', component: LoginComponent},
       {path: 'checkout', component: CheckoutComponent},
       {path: 'order-success', component: OrderSuccessComponent},

@@ -1,7 +1,17 @@
-<h1>התחברות</h1>
+<h1>הירשמ\י</h1>
 
 <mat-card class="login-card">
   <form #f="ngForm" (ngSubmit)="submit(f)">
+    <div class="form-group">
+      <label for="firstName">שם פרטי</label>
+      <input required ngModel name="firstName" #firstName="ngModel" id="firstName" type="text" class="form-control">
+      <div class="alert alert-danger" *ngIf="firstName.touched && !firstName.valid">אנא מלא\י שם פרטי</div>
+    </div>
+    <div class="form-group">
+      <label for="lastName">שם משפחה</label>
+      <input required ngModel name="lastName" #lastName="ngModel" id="lastName" type="text" class="form-control">
+      <div class="alert alert-danger" *ngIf="lastName.touched && !lastName.valid">אנא מלא\י שם משפחה</div>
+    </div>
     <div class="form-group">
       <label for="email">מייל</label>
       <input required email ngModel name="email" #email="ngModel" id="email" type="email" class="form-control">
