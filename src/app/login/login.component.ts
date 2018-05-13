@@ -1,3 +1,4 @@
+import { AuthService } from './../services/auth/auth.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private auth: AuthService
+  ) { }
 
   ngOnInit() {
   }
+
+  submit(f) {
+    this.auth.signinWithEmailPassword(f.value.email, f.value.password);
+  }
+
+  loginWithGoogle() {
+    this.auth.registerWithGoogle();
+  }
+
 
 }

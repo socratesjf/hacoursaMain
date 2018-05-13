@@ -24,6 +24,7 @@ export class BgNavbarComponent implements OnInit  {
     private afAuth: AngularFireAuth,
     private route: ActivatedRoute,
     private db: AngularFireDatabase,
+    private auth: AuthService
   ) {
     firebase.auth().onAuthStateChanged( async (user) => {
       this.user = await user;
@@ -36,11 +37,8 @@ export class BgNavbarComponent implements OnInit  {
   ngOnInit() {
   }
 
-
-
-
   logout() {
-    this.afAuth.auth.signOut();
+    this.auth.signOut();
   }
 
   
