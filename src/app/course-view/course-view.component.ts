@@ -23,7 +23,9 @@ export class CourseViewComponent implements OnInit{
     let id =  this.route.snapshot.paramMap.get('id');
     this.courseService.getCourse(id).valueChanges().take(1).subscribe( course => {
       this.courseObject = course;
-  })}
+  })
+    window.scrollTo(0, 0)
+}
 
   displayer = false;
 }

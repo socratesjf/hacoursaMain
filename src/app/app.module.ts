@@ -45,6 +45,9 @@ import { AppErrorHandler } from './common/app-error-handler';
 import { FormsModule } from '@angular/forms';
 import { ForumQuestionComponent } from './courses/course-forum/forum-question/forum-question.component';
 import { LoginComponent } from './login/login.component';
+import { PricingComponent } from './pricing/pricing.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { CoursesListComponent } from './courses-list/courses-list.component';
 
 
 
@@ -75,6 +78,9 @@ import { LoginComponent } from './login/login.component';
     TeacherCardComponent,
     ForumQuestionComponent,
     LoginComponent,
+    PricingComponent,
+    AboutUsComponent,
+    CoursesListComponent,
   ],
   imports: [
     BrowserModule,
@@ -99,6 +105,9 @@ import { LoginComponent } from './login/login.component';
       {path: 'checkout', component: CheckoutComponent},
       {path: 'order-success', component: OrderSuccessComponent},
       {path: 'order-success', component: OrderSuccessComponent},
+      {path: 'pricing', component: PricingComponent},
+      {path: 'about-us', component: AboutUsComponent},
+      {path: 'courses-list', component: CoursesListComponent},
       {path: 'my-profile', component: MyProfileComponent},
       {path: 'my-profile', component: MyProfileComponent},
       {path: 'admin/admin-dashboard', component: AdminDashboardComponent},

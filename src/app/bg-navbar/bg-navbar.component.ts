@@ -39,6 +39,7 @@ export class BgNavbarComponent implements OnInit  {
 
   logout() {
     this.auth.signOut();
+    this.dbUser$ = null;
   }
 
   

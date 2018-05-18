@@ -17,7 +17,10 @@ p {
     right: 15%;
 }
 
-
+.buy-button {
+    position: relative;
+    text-align: center;
+}
 
 
 
