@@ -10,6 +10,6 @@ export class CourseCatalogComponent {
 
   constructor() { }
 
-  courses = ['1','2','3','4'];
+  courses = ['1','2'];
 
 }

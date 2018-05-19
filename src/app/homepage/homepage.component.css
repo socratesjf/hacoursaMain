@@ -1,23 +1,23 @@
 
 .jumbotron{
-    background-image: url("https://dummyimage.com/1400x500/000/fff/");
+    background-color: #46c28e;
     background-size: 1000px;
-    height: 500px;
+    height: 600px;
     box-shadow: 5px 2px #888888;
 }
 
 .pageHeaderh1 {
     color: white;
     position: absolute;
-    right: 12%;
+    right: 40%;
     font-family: 'Assistant', sans-serif;
-    font-size: 60px;
+    font-size: 100px;
 }
 .pageHeaderp {
     color: white;
     position: absolute;
     top: 27%;
-    right: 12%;
+    right: 40%;
     font-family: 'Assistant', sans-serif;
     font-size: 20px;
 }
@@ -33,3 +33,10 @@
     text-align: center;
 }
 
+img {
+    width: 50px;
+}
+ 
+
+
+ 
